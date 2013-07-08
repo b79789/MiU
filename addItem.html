@@ -1,0 +1,67 @@
+<!doctype html>
+	<!-- Brian Stacks
+		VFW 1306
+		project2
+		6/3/2013-->
+<html manifest="/cache.manifest">
+	
+	<head>
+			<meta charset="utf-8" />
+			<meta keywords="Reserve,reservations,hotel,food" />
+			<meta description="An application that makes reservations for you"/>
+			<meta name="robots" content="index, follow"/>
+			<meta name="viewport" content="user-scalable=no, width=device-width" />
+			<meta name="HandheldFriendly" content="True" />
+			<meta name="MobileOptimized" content="320" />
+			<title>Add reservation</title>
+			<link href="css/formStyle.css" rel="stylesheet"/>
+	</head>
+			<div id="linksTop">
+				<a href="index.html" id="Home">Home</a>&nbsp;<a id="displayData">Display Data</a>&nbsp;<a id="clearData">Clear Stored Data</a>
+				&nbsp;<a href="addItem.html" id="addNew" style="display:none;">Add New Reservation</a>
+			</div>
+	<body>
+			
+			<h1 id="addReservation">Add Reservation</h1>
+			<form id="contactForm" action="#" method="post">
+				<fieldset>
+					<legend>Details</legend>
+					<ul id="errors"></ul>
+					<ul id="details">
+						<li id="select"<label id="peopleGoing" for="people">How Many People?</label><br /></li>
+					</ul>
+					<ol id="Personal Info">
+						<li><label for="fName">Full Name:</label><input type="text" id="fName"/></li>
+						<li><label for="email">Email:</label><input type="email" id="eMail" placeholder="someone123@somewhere.com "/></li>
+						<li><label for="pWord">Password:</label><input type="password" id="pWord"/></li>
+						<li><label for="eDate">Enter Date:</label><input type="date" id="eDate" placeholder="11/11/2013"/></li>
+						<li><label for="eTime">Enter Time:</label><input type="time" id="eTime" placeholder="11:11am"/></li>
+					</ol>
+				
+				
+					<legend>Place</legend>
+					<ul id="place">
+						<li><input type="checkbox" value="Applebee's" id="applebee" name="cPlace"/><label for="applebee">AppleBee's</label></li>
+						<li><input type="checkbox" value="Chili's" id="chili" name="cPlace"/><label for="chili">Chili's</label></li>
+					</ul>
+					<legend>Price range?($0-$500)</legend>
+						<input type="range" id="prices" min="0" max="500" value="0"/>
+					<legend>Extra Info</legend>	
+						<ul>
+							<li><label for="comments">Comments or questions?</label><textarea id="comments"></textarea></li>
+							<li><input type="hidden" value="false"</li>
+						</ul>
+				
+					<input type="submit" value="Save Reservation" id="submit"/><br />
+					
+					<footer>
+			    	<p1>6-3-2013, Brian Stacks</p1>
+					
+					</footer>
+				</fieldset>
+			</form>
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
