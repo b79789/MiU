@@ -4,14 +4,14 @@
    Project 1*/
 window.addEventListener("DOMContentLoaded", function(){
 	
-	function $(x){
+	function ge(x){
 		var myElement = document.getElementById(x);
 		return myElement;
 	}
 	// create select field element and populate with options
 	function makingMySelect (){
 		var formTag = document.getElementsByTagName("form");// array
-		var	selectLi = $("select");
+		var	selectLi =ge("select");
 		var	makeSelect = document.createElement("select");
 			makeSelect.setAttribute("id","peopleGoing");
 		for(i=0,j=reservePeopleGoing.length;i<j;i++){
@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function getMyCheckedBox1(){
-		if($("applebee").checked){
+		if(ge("applebee").checked){
 			cPlaceValue.push("applebee");
 		}else{
 			cPlaceValue.push("No applebees");
@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function getMyCheckedBox2(){
-		if($("chili").checked){
+		if(ge("chili").checked){
 			cPlaceValue.push("chili");
 		}else{
 			cPlaceValue.push("No chilis");
@@ -55,17 +55,17 @@ window.addEventListener("DOMContentLoaded", function(){
 	function toggleControl(n){
 		switch(n){
 		case "on":
-			$("contactForm").style.display="none";
-			$("clearData").style.display="inline";
-			$("displayData").style.display="none";
-			$("addNew").style.display="inline";
+			ge("contactForm").style.display="none";
+			ge("clearData").style.display="inline";
+			ge("displayData").style.display="none";
+			ge("addNew").style.display="inline";
 			break;
 		case "off":
-			$("contactForm").style.display="block";
-			$("clearData").style.display="inline";
-			$("displayData").style.display="inline";
-			$("addNew").style.display="none";
-			$("items").style.display="none";
+			ge("contactForm").style.display="block";
+			ge("clearData").style.display="inline";
+			ge("displayData").style.display="inline";
+			ge("addNew").style.display="none";
+			ge("items").style.display="none";
 			break;
 		default:
 			return false;
@@ -82,14 +82,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		getMyCheckedBox1();
 		getMyCheckedBox2();
 		var item = {};
-			item.places =["People",$("peopleGoing").value];
-			item.fName =["Name",$("fName").value];
-			item.eMail =["Email",$("eMail").value];
-			item.pWord =["Password",$("pWord").value];
-			item.eDate =["Date",$("eDate").value];
-			item.eTime =["Time",$("eTime").value];
+			item.places =["People",ge("peopleGoing").value];
+			item.fName =["Name",ge("fName").value];
+			item.eMail =["Email",ge("eMail").value];
+			item.pWord =["Password",ge("pWord").value];
+			item.eDate =["Date",ge("eDate").value];
+			item.eTime =["Time",ge("eTime").value];
 			item.place =["Place",cPlaceValue];
-			item.comments =["Comments",$("comments").value];
+			item.comments =["Comments",ge("comments").value];
 			//Save data into local storage using stringify to get the object to a str
 			localStorage.setItem(id,JSON.stringify(item));
 			alert("Succesful!!");
@@ -168,18 +168,18 @@ window.addEventListener("DOMContentLoaded", function(){
 		// grab the data from local storage item
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
-		var array1 = [$("applebee").id,$("chili").id];
+		var array1 = [ge("applebee").id,ge("chili").id];
 		
 		//show the form
 		toggleControl("off");
 		
 		
-		$("peopleGoing").value = item.places[1];
-		$("fName").value = item.fName[1];
-		$("eMail").value = item.eMail[1];
-		$("pWord").value = item.pWord[1];
-		$("eDate").value = item.eDate[1];
-		$("eTime").value = item.eTime[1];
+		ge("peopleGoing").value = item.places[1];
+		ge("fName").value = item.fName[1];
+		ge("eMail").value = item.eMail[1];
+		ge("pWord").value = item.pWord[1];
+		ge("eDate").value = item.eDate[1];
+		ge("eTime").value = item.eTime[1];
 		
 		for(i=0;i<array1.length;i++){
 			for(j=0;j<item.place[1].length;j++){
@@ -188,25 +188,13 @@ window.addEventListener("DOMContentLoaded", function(){
 				}
 			}
 		}
-		/*for(i=0;i<array1.length;i++){
-			for(j=0;j<array1.length;i++){
-				if(array1[i] === array1[j]){
-					$("applebee").setAttribute("checked", "checked");
-				}else if(array1[j] === array1[i]){
-					$("chili").setAttribute("checked", "checked");
-
-				}else{
-					return false;
-				}
-			}
-		}*/
-		$("comments").value = item.comments[1];
+				ge("comments").value = item.comments[1];
 		
 		// remove the listener from the input save reserve button
 		getInfoButton.removeEventListener("click",saveData);
 		// change submit value to say edit button
-		$("submit").value = "Edit Reservation";
-		var editSubmit =$("submit");
+		ge("submit").value = "Edit Reservation";
+		var editSubmit =ge("submit");
 		editSubmit.addEventListener("click",validate);
 		editSubmit.key = this.key;
 	}
@@ -224,8 +212,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function validate(e){
 		// define values we want to check
-		var getFname = $("fName");
-		var getEmail = $("eMail");
+		var getFname = ge("fName");
+		var getEmail = ge("eMail");
 		// reset error
 		errMsg.innerHTML = " ";
 			getFname.style.border = "1px solid black";
@@ -274,14 +262,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	var reservePeopleGoing = ["1","2","3","4","5"],
 		placeValue,
 		cPlaceValue = [],
-		errMsg = $("errors");
+		errMsg = ge("errors");
 	makingMySelect ();
 	
-	var clearData = $("clearData");
+	var clearData = ge("clearData");
 	clearData.addEventListener("click",clearUserData);
-	var getInfoButton =$("submit");
+	var getInfoButton =ge("submit");
 	getInfoButton.addEventListener("click",validate);
-	var displayLink = $("displayData");
+	var displayLink = ge("displayData");
 	displayLink.addEventListener("click",showUserData)
 	
 
