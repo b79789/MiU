@@ -14,11 +14,16 @@
 			<meta name="HandheldFriendly" content="True" />
 			<meta name="MobileOptimized" content="320" />
 			<title>Add reservation</title>
+			
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+			
 			<link href="css/formStyle.css" rel="stylesheet"/>
 	</head>
 			<div id="linksTop">
-				<a href="index.html" id="Home">Home</a>&nbsp;<a id="displayData">Display Data</a>&nbsp;<a id="clearData">Clear Stored Data</a>
-				&nbsp;<a href="addItem.html" id="addNew" style="display:none;">Add New Reservation</a>
+				<a href="index.html" data-ajax="false"id="Home">Home</a>&nbsp;<a id="displayData" data-ajax="false">Display Data</a>&nbsp;<a id="clearData" data-ajax="false">Clear Stored Data</a>
+				&nbsp;<a href="addItem.html" data-ajax="false" id="addNew" style="display:none;">Add New Reservation</a>
 			</div>
 	<body>
 			

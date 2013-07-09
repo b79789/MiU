@@ -1,49 +1,55 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-	<title>My Reservation App</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="jquery.mobile-1.3.1.css" />
-	<meta charset="utf-8" />
-	<meta keywords="Reserve,reservations,hotel,food" />
-	<meta description="This app will let you reserve a spot at your favorite location" />
-	<meta name="robots" content="index,follow" />
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="MobileOptimized" content="320" />
-	<link href="css/formStyle.css" rel="stylesheet"/>
-	<script src="jquery.mobile-1.3.1.js"></script>
-</head> 
-<body> 
-
-<div data-role="page">
-
-	<div data-role="header">
+<!doctype html>
+<html manifest="/cache.manifest">
+	<head>
+		<meta charset="utf-8" />
+		<meta keywords="Reserve,reservations,hotel,food" />
+		<meta description="This app will let you reserve a spot at your favorite location" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 		
-	</div><!-- /header -->
-	<header>
-				<a href="addItem.html"><img src="img/image1.jpg"width="300" height="auto" title="featureLogo"</a>
-							<input type="text" placeholder="Search" id="search" value="search" width="200 px"/>
-	</header>                                        
-	</div>
-	<div data-role="content">	
-				
-	</div><!-- /content -->
-		<fieldset>
-				<legend "Browse">Browse</legend>
+		<link href="css/formStyle.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/json.js"></script>
+		<title id="title">Make My Reservation</title>
+	</head>
+	<body>
+		<header>
+		<div class="container" id="home" data-role="page">
+			<div data-role="header">
+			<h1>Home</h1>
+				<a href="addItem.html" data-ajax="false"data-icon="plus">Reservation</a>
+			</div>
+			<div data-role="content">
+			<p> <a href="addItem.html" data-ajax="false"><img src="img/image1.jpg"width="290 px" height="auto" title="featureLogo"</a></p>
+			</div>
+			<fieldset>
+				<input type="text" placeholder="Search" id="search" value="search" width="200 px"/>
+				<legend id="frontPageLinks">Browse</legend>
+					<div data-role="controlgroup">
 					<ul id="browse">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="addItem.html">Make reservation now!</a></li>
-						<li><a href="locations.html">Locations</a></li>
-						<li><a href="workOpp.html">Work Opportunity</a></li>
-						<li><a href="contactUs.html">Contact Us</a></li>
+						<li><a href="index.html" data-ajax="false" data-role="button"
+												data-icon="arrow-r">Home</a></li>
+						<li><a href="addItem.html" data-ajax="false" data-role="button"
+												data-icon="arrow-r">Make reservation now!</a></li>
+						<li><a href="locations.html" data-ajax="false" data-role="button"
+													data-icon="arrow-r">Locations</a></li>
+						<li><a href="workOpp.html" data-ajax="false"data-role="button"
+													data-icon="arrow-r">Job Opportunity</a></li>
+						<li><a href="contactUs.html" data-ajax="false" data-role="button"
+													data-icon="arrow-r">Contact Us</a></li>
 					</ul>
-		</fieldset>
-
-</div><!-- /page -->
-	<footer>
-	    	<img src="img/Reservation_app_img.jpg"width= "20" height="20" title="Reservation Logo" />
-	    	<p1>6-3-2013, Brian Stacks</p1>
-	</footer>
-
-</body>
+				</fieldset>
+				<div data-role="footer" class="ui-bar">
+					<footer>
+			    	<img src="img/Reservation_app_img.jpg"width= "15px" height="15px" title="Reservation Logo" />
+			    	<p1>6-3-2013, Brian Stacks</p1>
+					</footer>
+				</div>
+		</div>	
+		</header>
+	</body>
 </html>
