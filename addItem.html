@@ -1,72 +1,89 @@
-<!doctype html>
-	<!-- Brian Stacks
-		VFW 1306
-		project2
-		6/3/2013-->
-<html manifest="/cache.manifest">
-	
-	<head>
-			<meta charset="utf-8" />
-			<meta keywords="Reserve,reservations,hotel,food" />
-			<meta description="An application that makes reservations for you"/>
-			<meta name="robots" content="index, follow"/>
-			<meta name="viewport" content="user-scalable=no, width=device-width" />
-			<meta name="HandheldFriendly" content="True" />
-			<meta name="MobileOptimized" content="320" />
-			<title>Add reservation</title>
-			
-			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-			<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-			
-			<link href="css/formStyle.css" rel="stylesheet"/>
-	</head>
-			<div id="linksTop">
-				<a href="index.html" data-ajax="false"id="Home">Home</a>&nbsp;<a id="displayData" data-ajax="false">Display Data</a>&nbsp;<a id="clearData" data-ajax="false">Clear Stored Data</a>
-				&nbsp;<a href="addItem.html" data-ajax="false" id="addNew" style="display:none;">Add New Reservation</a>
-			</div>
-	<body>
-			
-			<h1 id="addReservation">Add Reservation</h1>
-			<form id="contactForm" action="#" method="post">
-				<fieldset>
-					<legend>Details</legend>
-					<ul id="errors"></ul>
-					<ul id="details">
-						<li id="select"<label id="peopleGoing" for="people">How Many People?</label><br /></li>
-					</ul>
-					<ol id="Personal Info">
-						<li><label for="fName">Full Name:</label><input type="text" id="fName"/></li>
-						<li><label for="email">Email:</label><input type="email" id="eMail" placeholder="someone123@somewhere.com "/></li>
-						<li><label for="pWord">Password:</label><input type="password" id="pWord"/></li>
-						<li><label for="eDate">Enter Date:</label><input type="date" id="eDate" placeholder="11/11/2013"/></li>
-						<li><label for="eTime">Enter Time:</label><input type="time" id="eTime" placeholder="11:11am"/></li>
-					</ol>
-				
-				
-					<legend>Place</legend>
-					<ul id="place">
-						<li><input type="checkbox" value="Applebee's" id="applebee" name="cPlace"/><label for="applebee">AppleBee's</label></li>
-						<li><input type="checkbox" value="Chili's" id="chili" name="cPlace"/><label for="chili">Chili's</label></li>
-					</ul>
-					<legend>Price range?($0-$500)</legend>
-						<input type="range" id="prices" min="0" max="500" value="0"/>
-					<legend>Extra Info</legend>	
-						<ul>
-							<li><label for="comments">Comments or questions?</label><textarea id="comments"></textarea></li>
-							<li><input type="hidden" value="false"</li>
-						</ul>
-				
-					<input type="submit" value="Save Reservation" id="submit"/><br />
-					
-					<footer>
-			    	<p1>6-3-2013, Brian Stacks</p1>
-					
-					</footer>
-				</fieldset>
-			</form>
-		<script type="text/javascript" src="js/json.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<!-- Brian Stacks
+        VFW 1306
+        project2
+        6/3/2013-->
 
+<html manifest="/cache.manifest">
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <meta>
+    <meta content="index, follow" name="robots">
+    <meta content="user-scalable=no, width=device-width" name="viewport">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="320" name="MobileOptimized">
+
+    <title>Add reservation</title>
+    <link href=
+    "http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" rel=
+    "stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src=
+    "http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <link href="css/formStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="linksTop">
+        <a data-ajax="false" href="index.html" id=
+        "Home">Home</a>&nbsp;<a data-ajax="false" id="displayData">Display
+        Data</a>&nbsp;<a data-ajax="false" id="clearData">Clear Stored Data</a>
+        &nbsp;<a data-ajax="false" href="addItem.html" id="addNew" style=
+        "display:none;">Add New Reservation</a>
+    </div>
+
+    <h1 id="addReservation">Add Reservation</h1>
+
+    <form action="#" id="contactForm" method="post" name="contactForm">
+        <fieldset>
+            <legend>Details</legend>
+
+            <ul id="errors"></ul>
+
+            <ul id="details">
+                <li id="select"><label for="people" id="peopleGoing">How Many
+                People?</label><br></li>
+            </ul>
+
+            <ol id="Personal Info">
+                <li><label for="fName">Full Name:</label><input id="fName"
+                type="text"></li>
+
+                <li><label for="email">Email:</label><input id="eMail"
+                placeholder="someone123@somewhere.com" type="email"></li>
+
+                <li><label for="pWord">Password:</label><input id="pWord" type=
+                "password"></li>
+
+                <li><label for="eDate">Enter Date:</label><input id="eDate"
+                placeholder="11/11/2013" type="date"></li>
+
+                <li><label for="eTime">Enter Time:</label><input id="eTime"
+                placeholder="11:11am" type="time"></li>
+            </ol><legend>Place</legend>
+
+            <ul id="place">
+                <li><input id="applebee" name="cPlace" type="checkbox" value=
+                "Applebee's"><label for="applebee">AppleBee's</label></li>
+
+                <li><input id="chili" name="cPlace" type="checkbox" value=
+                "Chili's"><label for="chili">Chili's</label></li>
+            </ul><legend>Price range?($0-$500)</legend> <input id="prices" max=
+            "500" min="0" type="range" value="0"> <legend>Extra Info</legend>
+
+            <ul>
+                <li><label for="comments">Comments or questions?</label>
+                <textarea id="comments">
+</textarea></li>
+
+                <li><input type="hidden" value="false"></li>
+            </ul><input id="submit" type="submit" value="Save Reservation"><br>
+
+            <footer>
+                6-3-2013, Brian Stacks
+            </footer>
+        </fieldset>
+    </form><script src="js/json.js" type="text/javascript"></script> <script src="js/main.js" type="text/javascript"></script>
+</body>
 </html>
