@@ -18,19 +18,18 @@
 	</head>
 	<body>
 		<header>
-		<div class="container" id="home" data-role="page">
-			<div data-role="header">
-			<h1>Home</h1>
-				<a href="addItem.html" data-ajax="false"data-icon="plus">Reservation</a>
-			</div>
+			<div class="container" id="home" data-role="page">
+				<div data-role="header">
+					<h1>Home</h1>
+					<a href="addItem.html" data-ajax="false"data-icon="plus">Reservation</a>
+				</div>
 			<div data-role="content">
-			<p> <a href="addItem.html" data-ajax="false"><img src="img/image1.jpg"width="290 px" height="auto" title="featureLogo"</a></p>
-			</div>
-			<fieldset>
-				<input type="text" placeholder="Search" id="search" value="search" width="200 px"/>
-				<legend id="frontPageLinks">Browse</legend>
+				<p> <a href="addItem.html" data-ajax="false"><img src="img/image1.jpg"width="290 px" height="auto" title="featureLogo"</a></p>
+				<fieldset>
+				<input type="text" placeholder="Search" id="search" value="search" width="auto"/>
+				<a href="browse.html" data-ajax="false">Browse</a>
 					<div data-role="controlgroup">
-					<ul id="browse">
+					<ul data-role="listview" id="browse">
 						<li><a href="index.html" data-ajax="false" data-role="button"
 												data-icon="arrow-r">Home</a></li>
 						<li><a href="addItem.html" data-ajax="false" data-role="button"
@@ -42,14 +41,16 @@
 						<li><a href="contactUs.html" data-ajax="false" data-role="button"
 													data-icon="arrow-r">Contact Us</a></li>
 					</ul>
+					</div>
 				</fieldset>
+			</div>
 				<div data-role="footer" class="ui-bar">
 					<footer>
 			    	<img src="img/Reservation_app_img.jpg"width= "15px" height="15px" title="Reservation Logo" />
 			    	<p1>6-3-2013, Brian Stacks</p1>
 					</footer>
 				</div>
-		</div>	
+				</div>	
 		</header>
 	</body>
 </html>
