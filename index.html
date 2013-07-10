@@ -22,55 +22,232 @@
 </head>
 
 <body>
-        <div class="container" data-role="page" id="home">
-            <div data-role="header">
-                <h1>Home</h1><a data-ajax="false" data-icon="plus" href=
-                "addItem.html">Reservation</a>
-            </div>
+    <div data-role="page" data-theme="a" data-title="View Source: Home" id=
+    "home">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Home</h1><a data-ajax="false" data-icon="arrow-r" href=
+            "addItem.html">Add</a>
+        </div><!-- header -->
 
-            <div data-role="content">
-                <p><a data-ajax="false" href="addItem.html"><img height="auto"
-                src="img/image1.jpg" title="featureLogo" width=
-                "290 px"></a></p>
+        <div data-role="content">
+            <a href="addItem.html"><img height="auto" src="img/image1.jpg"
+            title="featureLogo" width="290 px"></a>
+        </div><input id="search" placeholder="Search" type="text" value=
+        "search">
 
-                <fieldset>
-                    <input id="search" placeholder="Search" type="text" value=
-                    "search">
+        <div data-role="controlgroup">
+            <a data-ajax="false" data-icon="arrow-r" data-role="button" href=
+            "addItem.html">Make Reservation</a> <a data-ajax="false" data-icon=
+            "arrow-r" data-role="button" href="#sMedia">Social Media</a>
+            <a data-ajax="false" data-icon="arrow-r" data-role="button" href=
+            "#workOpp">Job Opportunity</a> <a data-ajax="false" data-icon=
+            "arrow-r" data-role="button" href="#locations">Locations</a>
+            <a data-ajax="false" data-icon="arrow-r" data-role="button" href=
+            "#contactUs">Contact Us</a>
+        </div><!-- links -->
+    </div><!-- page end -->
+    <!-- Page: social media -->
 
-                    <div data-role="controlgroup">
-                        <ul data-role="listview" id="browse">
-                            <li>
-                                <a data-ajax="false" data-icon="arrow-r"
-                                data-role="button" href="addItem.html">Make
-                                reservation now!</a>
-                            </li>
+    <div data-role="page" data-theme="a" data-title="View Source: Social Media"
+    id="sMedia">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Social Media</h1><a data-ajax="false" data-icon="home"
+            data-iconpos="notext" href="index.html">Home</a>
+        </div><!-- header -->
 
-                            <li>
-                                <a data-ajax="false" data-icon="arrow-r"
-                                data-role="button" href=
-                                "locations.html">Locations</a>
-                            </li>
+        <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h3>FaceBook Address</h3>
 
-                            <li>
-                                <a data-ajax="false" data-icon="arrow-r"
-                                data-role="button" href="workOpp.html">Job
-                                Opportunity</a>
-                            </li>
+                    <p>Reserve@facebook.com</p>
+                </div><!-- collapsible -->
 
-                            <li>
-                                <a data-ajax="false" data-icon="arrow-r"
-                                data-role="button" href=
-                                "contactUs.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </fieldset>
-            </div>
+                <div data-collapsed="false" data-role="collapsible">
+                    <h3>Twitter Handle</h3>
 
-            <div class="ui-bar" data-role="footer">
-                    <img height="15px" src="img/Reservation_app_img.jpg" title=
-                    "Reservation Logo" width="15px"> 6-3-2013, Brian Stacks
-            </div>
-        </div>
+                    <p>@reserve_2nite</p>
+                </div><!-- collapsible -->
+
+                <div data-role="collapsible">
+                    <h3>LINKeDiN</h3>
+
+                    <p>reserve@me.com</p>
+                </div><!-- collapsible -->
+            </div><!-- accordion -->
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="addItem.html">Add Reservation</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#workOpp">Job Opportunity</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#locations">Locations</a>
+                    </li>
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    <!-- Page: Job Opportunity -->
+
+    <div data-role="page" data-theme="a" data-title=
+    "View Source: Job Opportunity" id="workOpp">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Job Opportunity</h1><a data-ajax="false" data-icon="home"
+            data-iconpos="notext" href="index.html">Home</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h3>Job Opportunity</h3>
+
+                    <p>Call 555-555-5555</p>
+                </div><!-- collapsible -->
+            </div><!-- accordion -->
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="addItem.html">Add Reservation</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#sMedia">Social Media</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#locations">Locations</a>
+                    </li>
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    <!-- Page: Locations -->
+
+    <div data-role="page" data-theme="a" data-title="View Source: Locations"
+    id="locations">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Locations</h1><a data-ajax="false" data-icon="home"
+            data-iconpos="notext" href="index.html">Home</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h3>Locations</h3>
+
+                    <p>Locations throughout North Carolina. Call
+                    555-555-5555</p>
+                </div><!-- collapsible -->
+            </div><!-- accordion -->
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="addItem.html">Add Reservation</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#sMedia">Social Media</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#workOpp">Job Opportunity</a>
+                    </li>
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    <!-- Page: Contact Us -->
+
+    <div data-role="page" data-theme="a" data-title="View Source: Contact Us"
+    id="contactUs">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Contact Us</h1><a data-ajax="false" data-icon="home"
+            data-iconpos="notext" href="index.html">Home</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h3>Contact Us</h3>
+
+                    <p>Contact Brian Stacks bstacks@test.com or call
+                    555-555-5555</p>
+                </div><!-- collapsible -->
+            </div><!-- accordion -->
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="addItem.html">Add Reservation</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#sMedia">Social Media</a>
+                    </li>
+
+                    <li>
+                        <a data-ajax="false" data-icon="arrow-r" data-role=
+                        "button" href="#workOpp">Job Opportunity</a>
+                    </li>
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
 </body>
 </html>
