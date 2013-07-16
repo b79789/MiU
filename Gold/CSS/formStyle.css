@@ -1,0 +1,65 @@
+/*
+Brian Stacks
+VFW 1306
+project2 6-5-13
+*/
+
+
+#content{
+	width:auto;
+	height: auto;
+	overflow: scroll;
+}
+
+
+
+
+
+#legend{
+	
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+a:hover{color: #00bfff;}
+
+#details{
+	color: white;
+	margin: 25px;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 25px;
+	width: 240px;
+	line-height: 1.5em;
+	background: -webkit-radial-gradient(circle, #056bd7, #2F2727);
+}
+
+
+
+#place{
+	color: white;
+	margin: 25px;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 25px;
+	width: 240px;
+	line-height: 1.5em;
+	background: -webkit-radial-gradient(circle, #056bd7, #2F2727);
+}
+#addReservation{
+	color: white;
+}
+
+#linksTop{
+	box-align:center;
+	text-align: center;
+	border:  2px solid black;
+	background: #d6f2ff;
+	border-radius: 20px;
+}
+
+
+#errors{
+	color: red;
+}
