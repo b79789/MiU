@@ -3,16 +3,7 @@ Brian Stacks
 VFW 1306
 project2 6-5-13
 */
-body{
-	font-family:fantasy, "Areial", sans-serif;
-	width: auto;
-	margin: auto;
-	padding: 10px;
-	box-align:center;
-	background-image: url('../img/BriansVfwimg2.png');
-    background-attachment:fixed;
 
-}
 
 #content{
 	width:auto;
@@ -20,30 +11,17 @@ body{
 	overflow: scroll;
 }
 
-h1 {
-	
-	font-family: "Areial";
-	text-align: center;
-	margin: 25px;
-	border: 2px solid black;
-	border-radius: 20px;
-	padding: 15px;
-	width: auto;
-	letter-spacing: 2px;
-	line-height: 1em;
-	background: -webkit-radial-gradient(circle, #056bd7, #2F2727);}
 
 
 
-legend{
+
+#legend{
 	
 	font-style: italic;
 	font-weight: bold;
 }
 
-p1{
-	font-size: 8pt;
-}
+
 a:hover{color: #00bfff;}
 
 #details{
@@ -57,16 +35,7 @@ a:hover{color: #00bfff;}
 	background: -webkit-radial-gradient(circle, #056bd7, #2F2727);
 }
 
-ol{
-	color: white;
-	margin: 25px;
-	border: 2px solid black;
-	border-radius: 20px;
-	padding: 25px;
-	width: 240px;
-	line-height: 1.5em;
-	background: -webkit-radial-gradient(circle, #056bd7, #2F2727);
-}
+
 
 #place{
 	color: white;
@@ -90,10 +59,6 @@ ol{
 	border-radius: 20px;
 }
 
-p{
-	color:black;
-	font-weight: bold;
-}
 
 #errors{
 	color: red;
