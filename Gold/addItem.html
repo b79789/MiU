@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Brian Stacks
+        VFW 1306
+        project2
+        6/3/2013-->
+
+<html manifest="/cache.manifest">
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <meta>
+    <meta content="index, follow" name="robots">
+    <meta content="user-scalable=no, width=device-width" name="viewport">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="320" name="MobileOptimized">
+    <link href="css/formStyle.css" rel="stylesheet">
+    <title>Add reservation</title>
+</head>
+
+<body>
+    <div id="linksTop">
+        <a data-ajax="false" href="index.html" id=
+        "Home">Home</a>&nbsp;<a data-ajax="false" id="displayData">Display
+        Data</a>&nbsp;<a data-ajax="false" id="clearData">Clear Stored Data</a>
+        &nbsp;<a data-ajax="false" href="addItem.html" id="addNew" style=
+        "display:none;">Add New Reservation</a>
+    </div>
+
+    <h1 id="addReservation">Add Reservation</h1>
+
+    <form action="#" id="contactForm" method="post" name="contactForm">
+        <fieldset>
+            <legend>Details</legend>
+
+            <ul id="errors"></ul>
+
+            <ul id="details" >
+                <li id="select"><label for="people" id="peopleGoing">How Many
+                People?</label><br></li>
+            </ul>
+
+            <ol id="Personal Info">
+                <li><label for="fName">Full Name:</label><input id="fName"
+                type="text"></li>
+
+                <li><label for="email">Email:</label><input id="eMail"
+                placeholder="someone123@somewhere.com" type="email"></li>
+
+                <li><label for="pWord">Password:</label><input id="pWord" type=
+                "password"></li>
+
+                <li><label for="eDate">Enter Date:</label><input id="eDate"
+                placeholder="11/11/2013" type="date"></li>
+
+                <li><label for="eTime">Enter Time:</label><input id="eTime"
+                placeholder="11:11am" type="time"></li>
+            </ol><legend>Place</legend>
+
+            <ul id="place">
+                <li><input id="applebee" name="cPlace" type="checkbox" value=
+                "Applebee's"><label for="applebee">AppleBee's</label></li>
+
+                <li><input id="chili" name="cPlace" type="checkbox" value=
+                "Chili's"><label for="chili">Chili's</label></li>
+            </ul><legend>Price range?($0-$500)</legend> <input id="prices" max=
+            "500" min="0" type="range" value="0"> <legend>Extra Info</legend>
+
+            <ul>
+                <li><label for="comments">Comments or questions?</label>
+                <textarea id="comments">
+</textarea></li>
+
+                <li><input type="hidden" value="false"></li>
+            </ul><input data-ajax="false" id="submit" type="submit" value="Save Reservation"><br>
+
+            <footer>
+                6-3-2013, Brian Stacks
+            </footer>
+        </fieldset>
+    </form>
+    <script src="js/json.js" type="text/javascript"></script> 
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

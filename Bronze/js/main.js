@@ -179,7 +179,7 @@ window.addEventListener("DOMContentLoaded", function() {
         for (i = 0; i < array1.length; i++) {
             for (j = 0; j < item.place[1].length; j++) {
                 if (array1[i] === item.place[1][j]) {
-                    $(array1[i]).setAttribute("checked", "checked");
+                    ge(array1[i]).setAttribute("checked", "checked");
                 }
             }
         }
