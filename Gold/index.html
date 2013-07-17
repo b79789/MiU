@@ -26,11 +26,11 @@
 	        <div>
 		       <h4>Browse</h4>
 		       <ul data-role="listview" data-inset="true" data-filter="true">
-		            <li> <a data-ajax="false" href="#sMedia">Names</a> </li>
-		            <li> <a data-ajax="false" href="#workOpp">Places</a></li>
-		            <li><a data-ajax="false" href="#locations">Times</a></li>
-		            <li><a data-ajax="false" href="#contactUs">How many people?</a></li>
-		            <li><a data-ajax="false" href="#date1">Dates</a></li>	            
+		            <li><a data-ajax="false" href="#sMedia"><img src="img/nametn.jpg"alt="Names">Names</a></li>
+		            <li> <a data-ajax="false" href="#workOpp"><img src="img/placetn.jpg"alt="Places">Places</a></li>
+		            <li><a data-ajax="false" href="#locations"><img src="img/timetn.jpg"alt="Times">Times</a></li>
+		            <li><a data-ajax="false" href="#contactUs"><img src="img/howManytn.jpg"alt="how">How many people?</a></li>
+		            <li><a data-ajax="false" href="#date1"><img src="img/datetn.jpg"alt="Dates">Dates</a></li>	            
 	            </ul>
 	        </div><!-- links -->
 	     </div>
@@ -40,7 +40,7 @@
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
-                        "button" href="index.html">Home</a>
+                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
                     </li>
 					
 					<li>
@@ -130,24 +130,23 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
+            <ul data-role="listview" data-filter="true" data-inset="true">
+            <div data-role="collapsible-set" data-inset="true" data-filter="true" >
+                <div data-role="collapsible" >
                     <h3>Place1</h3>
-
                     <p>AppleBee's</p>
                 </div>
                 <div data-role="collapsible">
-                    <h3>Place2</h3>
-                    
+                    <h3>Place2</h3>                    
                     <p>Chili's</p>
                 </div>
                 <div data-role="collapsible">   
-                    <h3>Place3</h3>
-                    
+                    <h3>Place3</h3>                    
                     <p>Chili's</p>
-                </div>
+                
                 </div><!-- collapsible -->
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -189,6 +188,7 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
+            <ul data-role="listview" data-filter="true" data-inset="true">
             <div data-role="collapsible-set">
                 <div data-role="collapsible">
                     <h3>Time1</h3>
@@ -216,6 +216,7 @@
                     <p>7:00pm</p>
                 </div><!-- collapsible -->
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -257,13 +258,25 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
+            <ul data-role="listview" data-filter="true" data-inset="true">
             <div data-role="collapsible-set">
                 <div data-role="collapsible">
-                    <h3>How many people?</h3>
+                    <h3>Reserve 1, How many people?</h3>
 
-                    <p>Number of people go here!</p>
+                    <p>7 People</p>
+                </div><!-- collapsible -->
+                <div data-role="collapsible">
+                    <h3>Reserve 2, How many people?</h3>
+
+                    <p>2 People</p>
+                </div><!-- collapsible -->
+                <div data-role="collapsible">
+                    <h3>Reserve 3, How many people?</h3>
+
+                    <p>4 People</p>
                 </div><!-- collapsible -->
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -351,15 +364,17 @@
 
         <div data-role="content" data-theme="a">
                 <div data-role="listview" data-inset="true">
-                  <ul data-role="listview" data-inset="true" data-theme="a">  
-	                <li>Brian Stacks Git links</li><br>
+                  <ul data-role="listview" data-inset="true" data-theme="a" data-filter="true">  
+	                	
+	                	<li><h1>Brian Stacks Git links</h1></li>
 
-						<p>https://github.com/b79789/MiU.git</p>
+						<li><p>https://github.com/b79789/MiU.git</p></li>
 
-						<p>http://b79789.github.io/MiU/Bronze/</p>
+						<li><p>http://b79789.github.io/MiU/Bronze/</p></li>
 
-						<p>http://b79789.github.io/MiU/Gold/</p>
+						<li><p>http://b79789.github.io/MiU/Gold/</p></li>
                   </ul>
+                  
                     
                 </div>
         </div><!-- content -->
@@ -384,7 +399,7 @@
 					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
-                        "button" href="#info1">Info</a>
+                        "button" href="#info1" class="ui-btn-active ui-state-persist">Info</a>
                     </li> 
                                                            
                 </ul>
@@ -404,9 +419,9 @@
 
         <div data-role="content" data-theme="a">
             <!--content here-->
-<<<<<<< HEAD
+            
             <div data-role="listview" data-theme="a" data-inset="true">
-	            <ol data-role="listview" data-theme="a" data-inset="true">
+	            <ol data-role="listview" data-theme="a" data-inset="true" data-filter="true">
 		            <li><h2>Nicole booked a reservation!</h2><p>Oct 13,2013</p></li>
 		            <li><h2>Isaiah booked a reservation!</h2><p>Oct 9,2013</p></li>
 		            <li><h2>Ashlie booked a reservation!</h2><p>Oct 4,2013</p></li>
@@ -414,21 +429,8 @@
 		            <li><h2>Allie booked a reservation!</h2><p>Oct 1,2013</p></li>
 	            </ol>
             </div>
-=======
-            <h2>News Feed</h2>
-            <h5>
-	            10-11-13: Jon Jay, 1:00 p.m, Chilis<br>
-	            10-09-13: Brad Steph, 1:00 a.m, Applebees<br>
-	            10-05-13: Bill Webb, 11:00 p.m, Applebees<br>
-	            10-04-13: Tim John, 10:00 p.m, Chilis<br>
-	            10-04-13: Bobbie May, 2:00 p.m, Applebees<br>
-	            10-03-13: Nicole Wells, 8:00 p.m, Chilis<br>
-	            10-02-13: Bill Webb, 11:00 a.m, Applebees<br>
-	            09-01-13: Jon Jay, 9:00 p.m, Chilis<br>
-	            07-5-13: Tim John, 10:30 p.m, Chilis<br>
-            </h5>
->>>>>>> gh-pages
-        </div><!-- content -->
+
+         </div><!-- content -->
 		<div data-id="vs_footer" data-position="fixed" data-role="footer"
         data-theme="a">
             <div data-role="navbar">
@@ -445,7 +447,7 @@
 					
 					<li>
                         <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
+                        "button" href="#news1" class="ui-btn-active ui-state-persist">News</a>
                     </li> 
 					
                     <li>
