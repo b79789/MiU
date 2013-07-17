@@ -9,14 +9,14 @@
      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
      <meta name="HandheldFriendly" content="True" />      
      <meta name="MobileOptimized" content="320" />
-    <link href="themes/My_Project.min.css" rel="stylesheet">
+    <link href="themes/My_Project.css" rel="stylesheet">
     <link href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css"rel="stylesheet">    
     <title id="title">Make My Reservation</title>
 </head>
 
 <body>
-    <div data-role="page" data-theme="a" data-title="View Source: Home" id="home">    
-        <div data-id="vs_header" data-position="fixed" data-role="header" data-theme="a">
+    <div data-role="page" data-theme="b" data-title="View Source: Home" id="home">    
+        <div data-id="vs_header" data-position="fixed" data-role="header" data-theme="b">
             <h1>Home</h1>
         </div><!-- header -->
         <div data-role="content">
@@ -26,31 +26,36 @@
 	        <div>
 		       <h4>Browse</h4>
 		       <ul data-role="listview" data-inset="true" data-filter="true">
-		            <li> <a data-ajax="false" href="#sMedia">Name</a> </li>
-		            <li> <a data-ajax="false" href="#workOpp">Place</a></li>
-		            <li><a data-ajax="false" href="#locations">Time</a></li>
-		            <li><a data-ajax="false" href="#contactUs">How many people?</a></li>
-		            <li><a data-ajax="false" href="#date1">Date</a></li>	            
+		            <li><a data-ajax="false" href="#sMedia"><img src="img/nametn.jpg"alt="Names">Names</a></li>
+		            <li> <a data-ajax="false" href="#workOpp"><img src="img/placetn.jpg"alt="Places">Places</a></li>
+		            <li><a data-ajax="false" href="#locations"><img src="img/timetn.jpg"alt="Times">Times</a></li>
+		            <li><a data-ajax="false" href="#contactUs"><img src="img/howManytn.jpg"alt="how">How many people?</a></li>
+		            <li><a data-ajax="false" href="#date1"><img src="img/datetn.jpg"alt="Dates">Dates</a></li>	            
 	            </ul>
 	        </div><!-- links -->
 	     </div>
 	     <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
-                        "button" href="index.html">Home</a>
+                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
                     </li>
-
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
                         "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
-                        <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
                     </li> 
                                                            
                 </ul>
@@ -59,47 +64,55 @@
     </div><!-- page end -->
     <!-- Page: Name -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Social Media"
+    <div data-role="page" data-theme="b" data-title="View Source: Social Media"
     id="sMedia">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
-            <h1>Name</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        data-theme="b">
+            <h1>Names</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
             
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
-                    <h3>Name 1</h3>
-
-                    <p>Names go here!</p>
-                </div><!-- collapsible -->
-
-                <div data-role="collapsible">
-                    <h3>Name 2</h3>
-
-                    <p>Names go here</p>
-                </div><!-- collapsible -->
-            </div><!-- accordion -->
+        <div data-role="content">
+            <div>                
+                <ol data-role="listview" data-inset="true" data-theme="b" >
+                	<li>Nicole</li>                 
+                    <li>Brian</li>
+                    <li>Ashlie</li>
+                    <li>Isaiah</li>
+                    <li>Tony</li>
+                    <li>Allie</li>
+                    <li>Tim</li>
+                    <li>Walt</li>
+                    <li>Travis</li>
+                    <li>Alex</li>
+                    <li>Bobby</li>
+                    <li>Adam</li>                
+                </ol>                              
+            </div><!-- orderedlist -->
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
                         "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
-                        <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
                     </li> 
                                                            
                 </ul>
@@ -112,38 +125,53 @@
     <div data-role="page" data-theme="a" data-title=
     "View Source: Job Opportunity" id="workOpp">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
-            <h1>Place</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        data-theme="b">
+            <h1>Places</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
-                    <h3>Place</h3>
-
-                    <p>Places go here!</p>
-                </div><!-- collapsible -->
-            </div><!-- accordion -->
+        <div data-role="content" data-theme="b">
+            <div data-role="listview" >
+	            <ul data-role="listview" data-inset="true" data-filter="true">
+	            
+	                
+	                    <li><h3>Place1</h3>
+	                    <p>AppleBee's</p></li>
+	                
+	            
+	                    <li> <h3>Place2</h3>                    
+	                    <p>Chili's</p></li>
+	          
+	             
+	                    <li> <h3>Place3</h3>                    
+	                    <p>Chili's</p> </li>               
+	            
+	            </ul>
+            </div>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
-                    <li>
-                        <a data-ajax="false" data-icon="info" data-role=
-                        "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
                         <a data-ajax="false" data-icon="search" data-role=
                         "button" href="#news1">News</a>
                     </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li>
                                                            
                 </ul>
             </div><!-- navbar -->
@@ -152,40 +180,63 @@
     
     <!-- Page: Time -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Locations"
+    <div data-role="page" data-theme="b" data-title="View Source: Locations"
     id="locations">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
+        data-theme="b">
             <h1>Times</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
-                    <h3>Times</h3>
+        <div data-role="content" data-theme="b">
+            <ul data-role="listview" data-filter="true" data-inset="true" data-autodividers="true">
+            
+               
+                    <li><h3>Time1</h3>
 
-                    <p>Times go here!</p>
-                </div><!-- collapsible -->
-            </div><!-- accordion -->
+                    <p>1:00pm</p>
+                
+                    <h3>Time2</h3>
+
+                    <p>11:00pm</p>
+                
+                    <h3>Time3</h3>
+
+                    <p>12:00pm</p>
+              
+                    <h3>Time4</h3>
+
+                    <p>1:00am</p>
+                
+                    <h3>Time5</h3>
+
+                    <p>7:00pm</p></li>
+                
+         
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
                         "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
-                        <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
                     </li> 
                                                            
                 </ul>
@@ -195,41 +246,76 @@
     
     <!-- Page: How many people? -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Contact Us"
+    <div data-role="page" data-theme="b" data-title="View Source: Contact Us"
     id="contactUs">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
+        data-theme="b">
             <h1>How Many?</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
-                    <h3>How many people?</h3>
+        <div data-role="content" data-theme="b">
+            <div class="ui-grid-b">
+    <div class="ui-block-a">
+        <div class="ui-bar"> <a data-ajax="false" href="addItem.html">
+        <img src="img/1.png" />
+        </a>
 
-                    <p>Number of people go here!</p>
-                </div><!-- collapsible -->
-            </div><!-- accordion -->
+        </div>
+    </div>
+    <div class="ui-block-b">
+        <div class="ui-bar"> <a data-ajax="false" href="addItem.html">
+        <img src="img/2.png" />
+        </a>
+
+        </div>
+    </div>
+    <div class="ui-block-c">
+        <div class="ui-bar"> <a data-ajax="false" href="addItem.html">
+        <img src="img/3.png" />
+        </a>
+
+        </div>
+    </div>
+    <div class="ui-block-a">
+        <div class="ui-bar"> <a data-ajax="false" href="addItem.html">
+        <img src="img/4.png" />
+        </a>
+
+        </div>
+    </div>
+    <div class="ui-block-b">
+        <div class="ui-bar"> <a data-ajax="false" href="addItem.html">
+        <img src="img/5.png" />
+        </a>
+
+        </div>
+    </div>
+    </div>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
-                    <li>
-                        <a data-ajax="false" data-icon="info" data-role=
-                        "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
                         <a data-ajax="false" data-icon="search" data-role=
                         "button" href="#news1">News</a>
                     </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li>  
                                                            
                 </ul>
             </div><!-- navbar -->
@@ -238,40 +324,42 @@
     
     <!-- Page: Date -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Contact Us"
+    <div data-role="page" data-theme="b" data-title="View Source: Contact Us"
     id="date1">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
-            <h1>Date</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        data-theme="b">
+            <h1>Dates</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
-                    <h3>Date</h3>
-
-                    <p>Date goes here</p>
-                </div><!-- collapsible -->
-            </div><!-- accordion -->
+        <div data-role="content" data-theme="b">
+        	<ul data-role="listview" data-inset="true" data-filter="true">
+		            <li> <a data-ajax="false" href="#1date">Date1</a> </li>
+		            <li> <a data-ajax="false" href="#2date">Date2</a></li>
+		            <li><a data-ajax="false" href="#3date">Date3</a></li>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
                         "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
-                        <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
                     </li> 
                                                            
                 </ul>
@@ -281,46 +369,52 @@
     
     <!-- Page: info -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Info and Contact Us"
+    <div data-role="page" data-theme="b" data-title="View Source: Info and Contact Us"
     id="info1">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
+        data-theme="b">
             <h1>Information</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
+        <div data-role="content" data-theme="b">
             <div data-role="listview">
-                <div data-role="listview" data-inset="true">
-                    <h3>Contact Us</h3>
+                
+                    <h3>Brian Stacks Git links</h3>
 
-                    <p>Phone Number: 555-555-5555</p>
-	                <p>Email: reserve@reserve.com</p>
-
-                    <h4>Social Contact</h4>
-
-                    <p>@reserve_2nite</p>
-	                    <p>Reserve@facebook.com</p>
-                    
-                </div>
+                    <p><a data-ajax="false" href="https://github.com/b79789/MiU.git">https://github.com/b79789/MiU.git</a></p>                        
+                        <p><a data-ajax="false"href="http://b79789.github.io/MiU/Bronze/">http://b79789.github.io/MiU/Bronze/</a></p>
+                       
+                        <p><a data-ajax="false"href="http://b79789.github.io/MiU/Gold/">http://b79789.github.io/MiU/Gold/</a></p>
+                        
+                
+	                <h3>Credits</h3>
+	                <p>Credits: </p><p>www.sterlingcreativeworks.com,</p><p>www.simplymuzo.com</p><p>thepropertymermaid.com</p><p>for the images.</p>
+              
             </div><!-- accordion -->
         </div><!-- content -->
+      
 		<div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
-                    <li>
-                        <a data-ajax="false" data-icon="info" data-role=
-                        "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
                         <a data-ajax="false" data-icon="search" data-role=
                         "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1" class="ui-btn-active ui-state-persist">Info</a>
                     </li> 
                                                            
                 </ul>
@@ -331,39 +425,190 @@
     
      <!-- Page: news -->
 
-    <div data-role="page" data-theme="a" data-title="View Source: Info and Contact Us"
+    <div data-role="page" data-theme="b" data-title="View Source: Info and Contact Us"
     id="news1">
         <div data-id="vs_header" data-position="fixed" data-role="header"
-        data-theme="a">
+        data-theme="b">
             <h1>News</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
         </div><!-- header -->
 
-        <div data-role="content" data-theme="a">
+        <div data-role="content" data-theme="b">
             <!--content here-->
-        </div><!-- content -->
+
+            
+
+
+
+            <div data-role="listview" data-theme="b" data-inset="true">
+	            <ol data-role="listview" data-theme="b" data-inset="true" data-filter="true">
+		            <li><h2>Nicole booked a reservation!</h2><p>Oct 13,2013</p></li>
+		            <li><h2>Isaiah booked a reservation!</h2><p>Oct 9,2013</p></li>
+		            <li><h2>Ashlie booked a reservation!</h2><p>Oct 4,2013</p></li>
+		            <li><h2>Tony booked a reservation!</h2><p>Oct 2,2013</p></li>
+		            <li><h2>Allie booked a reservation!</h2><p>Oct 1,2013</p></li>
+	            </ol>
+            </div>
+
+
+         </div><!-- content -->
+
 		<div data-id="vs_footer" data-position="fixed" data-role="footer"
-        data-theme="a">
+        data-theme="b">
             <div data-role="navbar">
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
                         "button" href="index.html">Home</a>
                     </li>
-
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1" class="ui-btn-active ui-state-persist">News</a>
+                    </li> 
+					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
                         "button" href="#info1">Info</a>
-                    </li> 
-                    
-                    <li>
-                        <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
                     </li> 
                                                            
                 </ul>
             </div><!-- navbar -->
         </div><!-- footer -->
         
+    </div><!-- page -->
+    
+    <div data-role="page" data-theme="b" data-title="View Source: 1date"
+    id="1date">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="b">
+            <h1>Dates</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="b">
+        	<ul data-role="listview" data-inset="true" data-filter="true">
+		            <li><p>Saturday, Oct.4,2013</p></li>
+		            <li> <a data-ajax="false" href="#2date">Date2</a></li>
+		            <li><a data-ajax="false" href="#3date">Date3</a></li>
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li> 
+                                                           
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    
+    <div data-role="page" data-theme="b" data-title="View Source: 2date"
+    id="2date">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="b">
+            <h1>Dates</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="b">
+        	<ul data-role="listview" data-inset="true" data-filter="true">
+		            <li> <a data-ajax="false" href="#1date">Date1</a> </li>
+		            <li><p>Tuesday, Oct.9,2013</p></li>
+		            <li><a data-ajax="false" href="#3date">Date3</a></li>
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li> 
+                                                           
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    
+    <div data-role="page" data-theme="b" data-title="View Source: 3date"
+    id="3date">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="b">
+            <h1>Dates</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="b">
+        	<ul data-role="listview" data-inset="true" data-filter="true">
+		            <li><a data-ajax="false" href="#1date">Date1</a></li>
+		            <li><a data-ajax="false" href="#2date">Date2</a></li>
+		            <li><p>Monday, Oct.11,2013</p></li>
+        </div><!-- content -->
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="addItem.html">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li> 
+                                                           
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
     </div><!-- page -->
     
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
