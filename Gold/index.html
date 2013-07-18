@@ -26,11 +26,11 @@
 	        <div>
 		       <h4>Browse</h4><!--browse section-->
 		       <ul data-role="listview" data-inset="true" data-filter="true">
-		            <li> <a data-ajax="false" href="#sMedia">Names</a> </li>
-		            <li> <a data-ajax="false" href="#workOpp">Places</a></li>
-		            <li><a data-ajax="false" href="#locations">Times</a></li>
-		            <li><a data-ajax="false" href="#contactUs">How many people?</a></li>
-		            <li><a data-ajax="false" href="#date1">Dates</a></li>	            
+		            <li><a data-ajax="false" href="#sMedia"><img src="img/nametn.jpg"alt="Names">Names</a></li>
+		            <li> <a data-ajax="false" href="#workOpp"><img src="img/placetn.jpg"alt="Places">Places</a></li>
+		            <li><a data-ajax="false" href="#locations"><img src="img/timetn.jpg"alt="Times">Times</a></li>
+		            <li><a data-ajax="false" href="#contactUs"><img src="img/howManytn.jpg"alt="how">How many people?</a></li>
+		            <li><a data-ajax="false" href="#date1"><img src="img/datetn.jpg"alt="Dates">Dates</a></li>	            
 	            </ul>
 	        </div><!-- links -->
 	     </div>
@@ -40,7 +40,7 @@
                 <ul>
                     <li>
                         <a data-ajax="false" data-icon="home" data-role=
-                        "button" href="index.html">Home</a>
+                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
                     </li>
 					
 					<li>
@@ -130,23 +130,26 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
-            <div data-role="collapsible-set">
-                <div data-role="collapsible">
+            <ul data-role="listview" data-filter="true" data-inset="true">
+            <div data-role="collapsible-set" data-inset="true" data-filter="true" >
+                <div data-role="collapsible" >
                     <h3>Place1</h3>
-
                     <p>AppleBee's</p>
                 </div>
                 <div data-role="collapsible">
-                    <h3>Place2</h3>
-                    
+                    <h3>Place2</h3>                    
                     <p>Chili's</p>
                 </div>
                 <div data-role="collapsible">   
-                    <h3>Place3</h3>
-                    
+                    <h3>Place3</h3>                    
                     <p>Chili's</p>
-                </div>
+
+                
+                </div><!-- collapsible -->
+
+                
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -188,6 +191,7 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
+            <ul data-role="listview" data-filter="true" data-inset="true">
             <div data-role="collapsible-set">
                 <div data-role="collapsible">
                     <h3>Time1</h3>
@@ -215,6 +219,7 @@
                     <p>7:00pm</p>
                 </div><!-- collapsible -->
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -256,13 +261,25 @@
         </div><!-- header -->
 
         <div data-role="content" data-theme="a">
+            <ul data-role="listview" data-filter="true" data-inset="true">
             <div data-role="collapsible-set">
                 <div data-role="collapsible">
-                    <h3>How many people?</h3>
+                    <h3>Reserve 1, How many people?</h3>
 
-                    <p>Number of people go here!</p>
+                    <p>7 People</p>
+                </div><!-- collapsible -->
+                <div data-role="collapsible">
+                    <h3>Reserve 2, How many people?</h3>
+
+                    <p>2 People</p>
+                </div><!-- collapsible -->
+                <div data-role="collapsible">
+                    <h3>Reserve 3, How many people?</h3>
+
+                    <p>4 People</p>
                 </div><!-- collapsible -->
             </div><!-- accordion -->
+            </ul>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
@@ -359,6 +376,10 @@
                         <p><a data-ajax="false"href="http://b79789.github.io/MiU/Gold/">http://b79789.github.io/MiU/Gold/</a></p>
                         
                 </div><!-- collapsible -->
+                <div data-role="collapsible">
+	                <h3>Credits</h3>
+	                <p>Credits: </p><p>www.sterlingcreativeworks.com,</p><p>www.simplymuzo.com</p><p>thepropertymermaid.com</p><p>for the images.</p>
+                </div>
             </div><!-- accordion -->
         </div><!-- content -->
       
@@ -383,7 +404,7 @@
 					
                     <li>
                         <a data-ajax="false" data-icon="info" data-role=
-                        "button" href="#info1">Info</a>
+                        "button" href="#info1" class="ui-btn-active ui-state-persist">Info</a>
                     </li> 
                                                            
                 </ul>
@@ -404,8 +425,12 @@
         <div data-role="content" data-theme="a">
             <!--content here-->
 
+            
+
+
+
             <div data-role="listview" data-theme="a" data-inset="true">
-	            <ol data-role="listview" data-theme="a" data-inset="true">
+	            <ol data-role="listview" data-theme="a" data-inset="true" data-filter="true">
 		            <li><h2>Nicole booked a reservation!</h2><p>Oct 13,2013</p></li>
 		            <li><h2>Isaiah booked a reservation!</h2><p>Oct 9,2013</p></li>
 		            <li><h2>Ashlie booked a reservation!</h2><p>Oct 4,2013</p></li>
@@ -413,7 +438,10 @@
 		            <li><h2>Allie booked a reservation!</h2><p>Oct 1,2013</p></li>
 	            </ol>
             </div>
-        </div><!-- content -->
+
+
+         </div><!-- content -->
+
 		<div data-id="vs_footer" data-position="fixed" data-role="footer"
         data-theme="a">
             <div data-role="navbar">
@@ -430,7 +458,7 @@
 					
 					<li>
                         <a data-ajax="false" data-icon="search" data-role=
-                        "button" href="#news1">News</a>
+                        "button" href="#news1" class="ui-btn-active ui-state-persist">News</a>
                     </li> 
 					
                     <li>
@@ -453,7 +481,7 @@
 
         <div data-role="content" data-theme="a">
         	<ul data-role="listview" data-inset="true" data-filter="true">
-		            <li><p>Saturday, Oct.4,2013</p></li>
+		            <li><h2>Saturday, Oct.4,2013</h2></li>
 		            <li> <a data-ajax="false" href="#2date">Date2</a></li>
 		            <li><a data-ajax="false" href="#3date">Date3</a></li>
         </div><!-- content -->
@@ -497,7 +525,7 @@
         <div data-role="content" data-theme="a">
         	<ul data-role="listview" data-inset="true" data-filter="true">
 		            <li> <a data-ajax="false" href="#1date">Date1</a> </li>
-		            <li><p>Tuesday, Oct.9,2013</p></li>
+		            <li><h2>Tuesday, Oct.9,2013</h2></li>
 		            <li><a data-ajax="false" href="#3date">Date3</a></li>
         </div><!-- content -->
 
@@ -541,7 +569,7 @@
         	<ul data-role="listview" data-inset="true" data-filter="true">
 		            <li><a data-ajax="false" href="#1date">Date1</a></li>
 		            <li><a data-ajax="false" href="#2date">Date2</a></li>
-		            <li><p>Monday, Oct.11,2013</p></li>
+		            <li><h2>Monday, Oct.11,2013</h2></li>
         </div><!-- content -->
 
         <div data-id="vs_footer" data-position="fixed" data-role="footer"
