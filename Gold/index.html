@@ -585,6 +585,8 @@
 					<li>
                         <a data-ajax="false" data-icon="search" data-role=
                         "button" href="#form">Reserve</a>
+<<<<<<< HEAD
+=======
                     </li>
 					
 					<li>
@@ -701,6 +703,7 @@
 					<li>
                         <a data-ajax="false" data-icon="search" data-role=
                         "button" href="#form">Reserve</a>
+>>>>>>> refs/heads/master
                     </li>
 					
 					<li>
@@ -718,6 +721,271 @@
         </div><!-- footer -->
     </div><!-- page -->
     
+<<<<<<< HEAD
+     <div data-role="page" data-theme="a" data-title="View Source: AddForm"
+    id="form">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Add Reservation</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="a" >
+        	<form action="" method="post" id="addForm" >
+	        	
+	        	<div data-role="fieldcontain" data-inset="true">
+		        	<label for="formHowMany">How many people?:</label>
+		        	<select name="formHowMany" id="formHowMany" data-native-menu="false">
+			        	<option data-placeholder="true">Please choose one</option>
+			        	<option value="1">1</option>
+			        	<option value="2">2</option>
+			        	<option value="3">3</option>
+			        	<option value="4">4</option>
+			        	<option value="5">5</option>
+			        	<option value="6">6</option>
+			        	<option value="7">7</option>
+			        	<option value="8">8</option>
+			        	<option value="9">9</option>
+			        	<option value="10">10</option>
+			        	<option value="More">More than 10</option>
+		        	</select>
+	        	</div>	        	
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formFirstName">First Name:</label>
+		        	<input type="text"  name="formFirstName" id="formFirstName"  data-clear-btn="true" class="required" />
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formLastName">Last Name:</label>
+		        	<input type="text" name="formLastName" id="formLastName" data-clear-btn="true" class="required"/>
+	        	</div>	        		        	
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formEmail">Email:</label>
+		        	<input type="email" name="formEmail" id="formEmail" data-clear-btn="true" class="required"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formPass">Password:</label>
+		        	<input type="password" name="formPass" id="formPass" data-clear-btn="true"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formDate">Enter Date:</label>
+		        	<input id="formDate" id="formDate" placeholder="01/01/2013" type="date" data-clear-btn="true" >
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formTime">Enter Time:</label><input id="formTime" placeholder="12:00pm" type="time" data-clear-btn="true" class="required">
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">	        	
+		        	<fieldset data-role="controlgroup">
+			        	<legend>Place:</legend>
+			        	<input type="checkbox" value="applebees" name="place-role" id="place-role1" class="required"/>
+			        	<label for="place-role1">Applebee's</label>
+			        	<input type="checkbox" value="applebees" name="place-role" id="place-role2"/>
+			        	<label for="place-role2">Chili's</label>
+		        	</fieldset>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formPrice">Price Range?</label>
+		        	<input type="range" name="formPrice" id="formPrice" value="0" min="0" max="500"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formComments">Comments:</label>
+		        	<textarea></textarea>
+	        	</div>
+
+	        	<div data-role="fieldcontain">
+		        	<input type="submit" value="Submit" data-theme="e"/>
+		        	<input data-mini="true" type="reset" value="Cancel" data-theme="b"/>
+	        	</div>
+	        	<a href="#errorPage" id="addFormErrorLink" data-rel="dialog" data-transition="pop">Open Errors</a>
+        	</form>
+        </div><!-- content -->
+        
+        
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#form">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li> 
+                                                           
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    <!-- Form Pages Start-->
+     <div data-role="page" data-theme="a" data-title="View Source: AddForm"
+    id="form">
+        <div data-id="vs_header" data-position="fixed" data-role="header"
+        data-theme="a">
+            <h1>Add Reservation</h1><a href="#" data-ajax="false" data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
+        </div><!-- header -->
+
+        <div data-role="content" data-theme="a">
+        	<form action="" method="post" id="addForm">
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formHowMany">How many people?:</label>
+		        	<select name="formHowMany" id="formHowMany" data-native-menu="false">
+			        	<option data-placeholder="true">Please choose one</option>
+			        	<option value="1">1</option>
+			        	<option value="2">2</option>
+			        	<option value="3">3</option>
+			        	<option value="4">4</option>
+			        	<option value="5">5</option>
+			        	<option value="6">6</option>
+			        	<option value="7">7</option>
+			        	<option value="8">8</option>
+			        	<option value="9">9</option>
+			        	<option value="10">10</option>
+			        	<option value="More">More than 10</option>
+		        	</select>
+	        	</div>	        	
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formFirstName">First Name:</label>
+		        	<input type="text"  name="formFirstName" id="formFirstName"  data-clear-btn="true" class="required" />
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formLastName">Last Name:</label>
+		        	<input type="text" name="formLastName" id="formLastName" data-clear-btn="true" class="required"/>
+	        	</div>	        		        	
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formEmail">Email:</label>
+		        	<input type="email" name="formEmail" id="formEmail" data-clear-btn="true" class="required"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formPass">Password:</label>
+		        	<input type="password" name="formPass" id="formPass" data-clear-btn="true"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formDate">Enter Date:</label>
+		        	<input id="formDate" id="formDate" placeholder="01/01/2013" type="date" data-clear-btn="true" >
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formTime">Enter Time:</label><input id="formTime" placeholder="12:00pm" type="time" data-clear-btn="true" class="required">
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">	        	
+		        	<fieldset data-role="controlgroup">
+			        	<legend>Place:</legend>
+			        	<input type="checkbox" value="applebees" name="place-role" id="place-role1" class="required"/>
+			        	<label for="place-role1">Applebee's</label>
+			        	<input type="checkbox" value="applebees" name="place-role" id="place-role2"/>
+			        	<label for="place-role2">Chili's</label>
+		        	</fieldset>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formPrice">Price Range?</label>
+		        	<input type="range" name="formPrice" id="formPrice" value="0" min="0" max="500"/>
+	        	</div>
+	        	
+	        	<div data-role="fieldcontain">
+		        	<label for="formComments">Comments:</label>
+		        	<textarea></textarea>
+	        	</div>
+
+	        	<div data-role="fieldcontain">
+		        	<input type="submit" value="Submit" data-theme="e"/>
+		        	<input data-mini="true" type="reset" value="Cancel" data-theme="b"/>
+	        	</div>
+	        	<a href="#errorPage" id="addFormErrorLink" data-rel="dialog" data-transition="pop">Open Errors</a>
+        	</form>
+        </div><!-- content -->
+        
+        
+
+        <div data-id="vs_footer" data-position="fixed" data-role="footer"
+        data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-ajax="false" data-icon="home" data-role=
+                        "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#form">Reserve</a>
+                    </li>
+					
+					<li>
+                        <a data-ajax="false" data-icon="search" data-role=
+                        "button" href="#news1">News</a>
+                    </li> 
+					
+                    <li>
+                        <a data-ajax="false" data-icon="info" data-role=
+                        "button" href="#info1">Info</a>
+                    </li> 
+                                                           
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page -->
+    <!-- Error Pages Start-->
+    <div data-role="dialog"  id="errorPage">
+    
+        <div  data-position="fixed" data-role="header" >
+            <h1>Missing Fields</h1>
+        </div><!-- header -->
+
+        <div data-role="content">
+	        <ul>
+		        <li></li>
+	        </ul>
+        </div>
+    </div>
+
+    <!--Javascript here-->
+    
+    <div data-role="dialog"  id="errorPage">
+    
+        <div  data-position="fixed" data-role="header" >
+            <h1>Missing Fields</h1>
+        </div><!-- header -->
+
+        <div data-role="content">
+	        <ul>
+		        <li></li>
+	        </ul>
+        </div>
+    </div>
+
+    <!--Javascript here-->
+    
+=======
+>>>>>>> refs/heads/master
     <div data-role="dialog"  id="errorPage">
     
         <div  data-position="fixed" data-role="header" >
