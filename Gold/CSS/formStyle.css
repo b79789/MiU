@@ -1,11 +1,11 @@
+
 /*
 Brian Stacks
 MiU 1307
 project3 6-5-13
 */
 
-label.error{
-	display: block;
-	margin: 10 px 0;
-	color: red;
-}
+label.error{display: box; margin: 10px 0; color: red;}
+
+#addFormErrorLink{display: none;}
+
