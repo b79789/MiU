@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Brian Stacks
 MiU 1307
@@ -10,3 +11,8 @@ label.error{display: box; margin: 10px 0; color: red;}
 
 #addFormErrorLink{display: none;}
 
+=======
+label.error{display: box; margin: 10px 0; color: red;}
+
+#addFormErrorLink{display: none;}
+>>>>>>> refs/heads/master
